@@ -1,0 +1,11 @@
+{
+    "root": "apps/vid-mart-api/",
+    "targets":{
+        "build":{
+            "executor": "nx:run-commands",
+            "options":{
+                "command":"tsc"
+            }
+        }
+    }
+}
