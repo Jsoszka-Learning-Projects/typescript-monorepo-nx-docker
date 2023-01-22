@@ -2,7 +2,9 @@
     "name": "fastify-dockerized",
     "type": "module",
     "scripts": {
-        "start": "ts-node --esm ./src/server.ts"
+        "start": "ts-node --esm ./src/server.ts",
+        "docker:build": "docker build -t fastify-app .",
+        "docker:run":"docker run -dp 3000:3000 fastify-app"
     },
     "dependencies": {
         "fastify": "^4.12.0"
