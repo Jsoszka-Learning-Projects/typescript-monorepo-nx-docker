@@ -1,3 +1,4 @@
 {
-    "name":"vid-mart-api"
+    "name":"vid-mart-api",
+    "type": "module"
 }

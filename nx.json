@@ -12,7 +12,18 @@
             "!{projectRoot}/**/*.spec.ts"
         ]
     },
-    "targetDefaults": {},
+    "targetDefaults": {
+        "build": {
+            
+            "executor": "@nrwl/js:tsc",
+            "options": {
+                "rootDir":"apps/vid-mart-api",
+                "main":"apps/vid-mart-api/src/server.ts",
+                "outputPath":"dist/apps/vid-mart-api",
+                "tsConfig":"apps/vid-mart-api/tsconfig.json"
+            }
+        }
+    },
     "tasksRunnerOptions": {
         "default": {
             "runner": "nx/tasks-runners/default",

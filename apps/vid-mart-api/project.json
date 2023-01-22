@@ -1,10 +1,14 @@
 {
     "root": "apps/vid-mart-api/",
     "targets":{
-        "build":{
-            "executor": "nx:run-commands",
-            "options":{
-                "command":"tsc"
+        "build": {
+            
+            "executor": "@nrwl/js:tsc",
+            "options": {
+                "rootDir":"apps/vid-mart-api",
+                "main":"apps/vid-mart-api/src/server.ts",
+                "outputPath":"dist/apps/vid-mart-api",
+                "tsConfig":"apps/vid-mart-api/tsconfig.json"
             }
         }
     }
