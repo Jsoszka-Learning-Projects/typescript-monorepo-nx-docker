@@ -1,1 +1,16 @@
 GET http://localhost:3000 
+
+GET http://localhost:3000/stores
+
+POST http://localhost:3000/stores
+content-type: application/json
+
+{
+    "address":{
+        "streetAddress":"9101 Stony Point Parkway",
+        "streetAddress2":"Apt 1414",
+        "city":"Richmond",
+        "state": "VA",
+        "zip": 23235
+    }
+}

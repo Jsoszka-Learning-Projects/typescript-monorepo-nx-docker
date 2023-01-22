@@ -2,12 +2,16 @@
     "name": "fastify-dockerized",
     "type": "module",
     "scripts": {
-        "start": "ts-node --esm ./src/server.ts",
+        "build": "tsc",
+        "start": "nodemon --esm ./src/server.ts",
         "docker:build": "docker build -t fastify-app .",
-        "docker:run":"docker run -dp 3000:3000 fastify-app"
+        "docker:run": "docker run -dp 3000:3000 fastify-app"
     },
     "dependencies": {
-        "fastify": "^4.12.0"
+        "@fastify/type-provider-typebox": "^2.4.0",
+        "@sinclair/typebox": "^0.25.21",
+        "fastify": "^4.12.0",
+        "fastify-plugin": "^4.5.0"
     },
     "devDependencies": {
         "@types/node": "^18.11.18",
