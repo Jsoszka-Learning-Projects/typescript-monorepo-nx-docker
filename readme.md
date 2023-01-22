@@ -6,19 +6,20 @@ This learning project primarily focuses on managing a Typescript Monorepo using 
 
 We will be building a web application for a video rental store company
 
-# Project Requirements
+## Project Requirements
 
 * NX is used to manage projects
 * Custom NX generators & executors used, or a custom plugin
 * Docker image which supports building, running, and testing the application
 
-# Monorepo Projects
+## Monorepo Projects
 
 * Fastify API Backend
 * Employee Web App (Angular)
 * Customer Web App (Svelte)
 
 ## Feature Ideas
+
 These are just ideas, this project focuses on proper use of nx and docker, but if I need to write some features to better illustrate nx usage here are some features to implement.
 
 * An employee can
