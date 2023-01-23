@@ -6,7 +6,7 @@ This learning project primarily focuses on managing a Typescript Monorepo using 
 
 We will be building a web application for a video rental store company
 
-## Project Requirements
+## Project Goals
 
 * NX is used to manage projects
 * Custom NX generators & executors used, or a custom plugin
